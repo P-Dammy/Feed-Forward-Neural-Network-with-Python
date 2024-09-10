@@ -5,6 +5,7 @@ The Iris dataset is a well-known dataset in the field of machine learning, commo
 The goal of this project is to demonstrate the effectiveness of FNN in handling small, structured datasets like Iris and to gain insights into the behavior of the network in a multi-class classification problem.
 
 **#2. Data Description**
+
 The Iris dataset consists of 150 samples, with the following features:
 
 **sepal length (cm)
@@ -21,12 +22,15 @@ Each class contains 50 samples. The dataset is balanced, making it ideal for dem
 Dataset Source: The dataset can be directly loaded from the sklearn library, or via the seaborn library.
 
 **3. Project Overview**
+
 This project is structured as follows:
 
 **3.1 Data Preprocessing and EDA**
+
 The Iris dataset is first preprocessed by normalizing the input features. This ensures that the neural network can efficiently learn during training. No missing values or categorical features need handling, making the preprocessing minimal. Also, the data wa explored visually for better understanding of the data
 
 **3.2 Model Architecture**
+
 The model is a Feedforward Neural Network (FNN) with:
 
 Two hidden layers, each consisting of 10 neurons and using the ReLU activation function.
@@ -38,13 +42,16 @@ Optimizer: Adam optimizer, a widely-used optimization technique for neural netwo
 Metrics: Accuracy is used to monitor the model performance.
 
 **3.3 Model Training and Evaluation**
+
 The model is trained on 80% of the dataset, with 20% reserved as a validation set. The network is trained over 50 epochs with a batch size of 5. Accuracy and loss metrics are plotted for both the training and validation sets.
 
 **3.4 Visualization**
+
 The performance of the model is visualized using:
 
 Accuracy and Loss Curves: To show the progression of training and validation accuracy/loss over epochs.
 Confusion Matrix: To evaluate the classification performance and visualize the correctly and incorrectly classified samples.
 
-#3.5 Results and Insights
+**3.5 Results and Insights**
+
 The model achieves a high accuracy on both the training and validation sets, demonstrating the effectiveness of the Feedforward Neural Network in classifying Iris species. Insights about model performance, overfitting, and generalization are discussed based on the training curves and confusion matrix.
